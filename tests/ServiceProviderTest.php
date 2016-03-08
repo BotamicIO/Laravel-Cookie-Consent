@@ -9,22 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace DraperStudio\CookieConsent\Facades;
+namespace DraperStudio\Tests\CookieConsent;
 
-use Illuminate\Support\Facades\Facade;
+use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
 
 /**
- * Class CookieConsent.
+ * This is the service provider test class.
  *
  * @author DraperStudio <hello@draperstudio.tech>
  */
-class CookieConsent extends Facade
+class ServiceProviderTest extends AbstractTestCase
 {
-    /**
-     * @return string
-     */
-    protected static function getFacadeAccessor()
-    {
-        return 'cookie-consent';
-    }
+    use ServiceProviderTrait;
 }
