@@ -2,20 +2,20 @@
 
 namespace BrianFaust\CookieConsent;
 
-class ServiceProvider extends \BrianFaust\ServiceProvider\ServiceProvider
+use BrianFaust\ServiceProvider\ServiceProvider;
+
+class CookieConsentServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
      */
     public function boot()
     {
+        parent::boot();
+
         $this->publishConfig();
-
         $this->publishViews();
-
         $this->loadViews();
-
-        $this->mergeConfig();
     }
 
     /**
@@ -24,6 +24,8 @@ class ServiceProvider extends \BrianFaust\ServiceProvider\ServiceProvider
     public function register()
     {
         parent::register();
+
+        $this->mergeConfig();
 
         $this->app->singleton('cookie-consent', function ($app) {
             return new Builder($app);

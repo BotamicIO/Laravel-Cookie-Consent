@@ -1,6 +1,6 @@
 <?php
 
-namespace BrianFaust\Tests\CookieConsent\Tests\Facades;
+namespace BrianFaust\Tests\CookieConsent\tests\Facades;
 
 use GrahamCampbell\TestBenchCore\FacadeTrait;
 use BrianFaust\Tests\CookieConsent\AbstractTestCase;

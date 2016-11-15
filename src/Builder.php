@@ -18,67 +18,12 @@ class Builder
      */
     public function __construct(Container $app)
     {
-        $this->config = $app->config['cookie-consent'];
-    }
+        $this->config = array_filter($app->config['cookie-consent']);
+        $this->config['content'] = array_filter($this->config['content']);
 
-    /**
-     * @param $value
-     *
-     * @return $this
-     */
-    public function message($value)
-    {
-        $this->config['message'] = $value;
-
-        return $this;
-    }
-
-    /**
-     * @param $value
-     *
-     * @return $this
-     */
-    public function dismiss($value)
-    {
-        $this->config['dismiss'] = $value;
-
-        return $this;
-    }
-
-    /**
-     * @param $value
-     *
-     * @return $this
-     */
-    public function learnMore($value)
-    {
-        $this->config['learnMore'] = $value;
-
-        return $this;
-    }
-
-    /**
-     * @param $value
-     *
-     * @return $this
-     */
-    public function link($value)
-    {
-        $this->config['link'] = $value;
-
-        return $this;
-    }
-
-    /**
-     * @param $value
-     *
-     * @return $this
-     */
-    public function theme($value)
-    {
-        $this->config['theme'] = $value;
-
-        return $this;
+        if (empty($this->config['content'])) {
+            unset($this->config['content']);
+        }
     }
 
     /**
@@ -86,6 +31,6 @@ class Builder
      */
     public function render()
     {
-        return view('cookie-consent::container', $this->config);
+        return view('cookie-consent::container', ['config' => $this->config]);
     }
 }

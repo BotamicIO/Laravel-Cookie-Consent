@@ -2,14 +2,25 @@
 
 return [
 
-    'message' => 'This website uses cookies to ensure you get the best experience on our website',
-
-    'dismiss' => 'Got it!',
-
-    'learnMore' => 'More info',
-
-    'link' => null,
-
-    'theme' => 'dark-bottom',
+    'palette' => [
+        'popup' => [
+            'background' => '#000',
+        ],
+        'button' => [
+            'background' => '#f1d600',
+        ],
+    ],
+    'static'   => true,
+    'showLink' => null,
+    'theme'    => 'edgeless',
+    'position' => 'top',
+    'type'     => null,
+    'content'  => [
+        'message' => null,
+        'dismiss' => null,
+        'allow'   => null,
+        'link'    => null,
+        'href'    => null,
+    ],
 
 ];

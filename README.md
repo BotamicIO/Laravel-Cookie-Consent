@@ -12,9 +12,7 @@ Add the service provider to `config/app.php` in the `providers` array.
 
 ``` php
 'providers' => [
-    // ... Illuminate Providers
-    // ... App Providers
-    BrianFaust\CookieConsent\ServiceProvider::class
+    BrianFaust\CookieConsent\CookieConsentServiceProvider::class
 ];
 ```
 
@@ -22,7 +20,6 @@ If you want you can use the [facade](http://laravel.com/docs/facades). Add the r
 
 ``` php
 'aliases' => [
-    // ... Illuminate Facades
     'CookieConsent' => BrianFaust\CookieConsent\Facades\CookieConsent::class
 ];
 ```
@@ -44,7 +41,7 @@ This will create a `config/cookie-consent.php` file in your app that you can mod
 ##### Render the Cookie Constent "Container"
 
 ``` php
-{!! cookie_consent() !!}
+{!! CookieConsent::render() !!}
 ```
 
 ## Security
