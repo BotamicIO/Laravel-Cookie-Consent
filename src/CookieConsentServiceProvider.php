@@ -11,10 +11,10 @@ class CookieConsentServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        parent::boot();
-
         $this->publishConfig();
+
         $this->publishViews();
+
         $this->loadViews();
     }
 
