@@ -11,18 +11,14 @@ $ composer require faustbrian/laravel-cookie-consent
 Add the service provider to `config/app.php` in the `providers` array.
 
 ``` php
-'providers' => [
-    BrianFaust\CookieConsent\CookieConsentServiceProvider::class
-];
+BrianFaust\CookieConsent\CookieConsentServiceProvider::class
 ```
 
 If you want you can use the [facade](http://laravel.com/docs/facades). Add the reference in `config/app.php` to your aliases array.
 
 ``` php
 'aliases' => [
-    'CookieConsent' => BrianFaust\CookieConsent\Facades\CookieConsent::class
-];
-```
+    'CookieConsent' => BrianFaust\CookieConsent\Facades\CookieConsent```
 
 ## Configuration
 
