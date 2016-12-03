@@ -2,19 +2,11 @@
 
 All Notable changes to `faustbrian/laravel-cookie-consent` will be documented in this file.
 
-## NEXT - YYYY-MM-DD
+## 2.0.1 (15/11/2016)
+- Remove helpers.php
 
-### Added
-- Nothing
+## 2.0.0 (15/11/2016)
+- Restructure the package
 
-### Deprecated
-- Nothing
-
-### Fixed
-- Nothing
-
-### Removed
-- Nothing
-
-### Security
-- Nothing
+## 1.0.0 (04/11/2016)
+- First release
