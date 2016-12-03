@@ -1,11 +1,20 @@
 <?php
 
+/*
+ * This file is part of Laravel Cookie Consent.
+ *
+ * (c) Brian Faust <hello@brianfaust.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace BrianFaust\Tests\CookieConsent\tests\Facades;
 
-use GrahamCampbell\TestBenchCore\FacadeTrait;
-use BrianFaust\Tests\CookieConsent\AbstractTestCase;
-use BrianFaust\CookieConsent\Facades\CookieConsent;
 use BrianFaust\CookieConsent\Builder;
+use BrianFaust\CookieConsent\Facades\CookieConsent;
+use BrianFaust\Tests\CookieConsent\AbstractTestCase;
+use GrahamCampbell\TestBenchCore\FacadeTrait;
 
 class CookieConsentTest extends AbstractTestCase
 {
