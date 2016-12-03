@@ -9,6 +9,8 @@
  * file that was distributed with this source code.
  */
 
+declare(strict_types=1);
+
 namespace BrianFaust\Tests\CookieConsent;
 
 use GrahamCampbell\TestBench\AbstractPackageTestCase;
@@ -34,7 +36,7 @@ abstract class AbstractTestCase extends AbstractPackageTestCase
      *
      * @return string
      */
-    protected function getServiceProviderClass($app)
+    protected function getServiceProviderClass($app): string
     {
         return \BrianFaust\CookieConsent\ServiceProvider::class;
     }
