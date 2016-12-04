@@ -22,9 +22,9 @@ declare(strict_types=1);
 
 namespace BrianFaust\CookieConsent;
 
-use BrianFaust\ServiceProvider\ServiceProvider;
+use BrianFaust\ServiceProvider\AbstractServiceProvider;
 
-class CookieConsentServiceProvider extends ServiceProvider
+class CookieConsentServiceProvider extends AbstractServiceProvider
 {
     /**
      * Bootstrap the application services.
