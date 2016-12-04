@@ -23,6 +23,7 @@ declare(strict_types=1);
 namespace BrianFaust\CookieConsent;
 
 use Illuminate\Container\Container;
+use Illuminate\View\View;
 
 class Builder
 {
@@ -49,7 +50,7 @@ class Builder
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function render()
+    public function render(): View
     {
         return view('cookie-consent::container', ['config' => $this->config]);
     }
