@@ -10,18 +10,6 @@ Require this package, with [Composer](https://getcomposer.org/), in the root dir
 $ composer require faustbrian/laravel-cookie-consent
 ```
 
-Add the service provider to `config/app.php` in the `providers` array.
-
-``` php
-BrianFaust\CookieConsent\CookieConsentServiceProvider::class
-```
-
-If you want you can use the [facade](http://laravel.com/docs/facades). Add the reference in `config/app.php` to your aliases array.
-
-``` php
-'aliases' => [
-    'CookieConsent' => BrianFaust\CookieConsent\Facades\CookieConsent```
-
 ## Configuration
 
 Laravel Cookie Consent supports optional configuration.
@@ -42,19 +30,11 @@ This will create a `config/cookie-consent.php` file in your app that you can mod
 {!! CookieConsent::render() !!}
 ```
 
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
-
 ## Testing
 
 ``` bash
 $ phpunit
 ```
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security
 

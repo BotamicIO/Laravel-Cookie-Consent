@@ -1,8 +1,5 @@
 <?php
 
-
-declare(strict_types=1);
-
 /*
  * This file is part of Laravel Cookie Consent.
  *
@@ -31,7 +28,7 @@ class Builder
      */
     public function __construct(Container $app)
     {
-        $this->config = array_filter($app->config['cookie-consent']);
+        $this->config = array_filter($app->config['laravel-cookie-consent']);
         $this->config['content'] = array_filter($this->config['content']);
 
         if (empty($this->config['content'])) {
