@@ -19,17 +19,17 @@ return [
             'background' => '#f1d600',
         ],
     ],
-    'static' => true,
+    'static'   => true,
     'showLink' => null,
-    'theme' => 'edgeless',
+    'theme'    => 'edgeless',
     'position' => 'top',
-    'type' => null,
-    'content' => [
+    'type'     => null,
+    'content'  => [
         'message' => null,
         'dismiss' => null,
-        'allow' => null,
-        'link' => null,
-        'href' => null,
+        'allow'   => null,
+        'link'    => null,
+        'href'    => null,
     ],
 
 ];
