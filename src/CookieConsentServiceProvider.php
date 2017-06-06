@@ -38,6 +38,14 @@ class CookieConsentServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(__DIR__.'/../config/laravel-cookie-consent.php', 'laravel-cookie-consent');
 
+        $this->registerBuilder();
+    }
+
+    /**
+     * Register the builder.
+     */
+    private function registerBuilder()
+    {
         $this->app->singleton('cookie-consent', function ($app) {
             return new Builder($app);
         });
