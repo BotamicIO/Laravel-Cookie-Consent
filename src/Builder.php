@@ -11,8 +11,8 @@
 
 namespace BrianFaust\CookieConsent;
 
-use Illuminate\Container\Container;
 use Illuminate\View\View;
+use Illuminate\Container\Container;
 
 class Builder
 {
