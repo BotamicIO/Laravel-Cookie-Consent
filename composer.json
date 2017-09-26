@@ -10,7 +10,7 @@
     }],
     "require": {
         "php": "^7.0",
-        "faustbrian/laravel-service-provider": "^1.0"
+        "illuminate/support": "5.4.* || 5.5.*"
     },
     "require-dev": {
         "graham-campbell/testbench": "^3.3",
