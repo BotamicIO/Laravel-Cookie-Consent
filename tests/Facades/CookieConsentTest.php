@@ -14,9 +14,9 @@ declare(strict_types=1);
 namespace BrianFaust\Tests\CookieConsent\tests\Facades;
 
 use BrianFaust\CookieConsent\Builder;
-use GrahamCampbell\TestBenchCore\FacadeTrait;
 use BrianFaust\CookieConsent\Facades\CookieConsent;
 use BrianFaust\Tests\CookieConsent\AbstractTestCase;
+use GrahamCampbell\TestBenchCore\FacadeTrait;
 
 class CookieConsentTest extends AbstractTestCase
 {

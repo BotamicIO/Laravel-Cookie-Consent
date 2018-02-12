@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\CookieConsent;
 
-use Illuminate\View\View;
 use Illuminate\Container\Container;
+use Illuminate\View\View;
 
 class Builder
 {
