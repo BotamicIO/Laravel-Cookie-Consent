@@ -1,12 +1,12 @@
 {
-    "name": "faustbrian/laravel-cookie-consent",
+    "name": "artisanry/cookie-consent",
     "description": "Easy drop-in Cookie Consent (Silktide) for Laravel 5",
-    "keywords": ["laravel", "framework", "Laravel-Cookie-Consent", "Laravel CookieConsent", "Brian Faust", "faustbrian"],
+    "keywords": ["laravel", "framework", "Laravel-Cookie-Consent", "Laravel CookieConsent"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
+        "email": "hello@basecode.sh",
+        "homepage": "https://basecode.sh"
     }],
     "require": {
         "php": "^7.1",
@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\CookieConsent\\": "src/"
+            "Artisanry\\CookieConsent\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\CookieConsent\\": "tests"
+            "Artisanry\\Tests\\CookieConsent\\": "tests"
         }
     },
     "config": {
@@ -37,10 +37,10 @@
         },
         "laravel": {
             "providers": [
-                "BrianFaust\\CookieConsent\\CookieConsentServiceProvider"
+                "Artisanry\\CookieConsent\\CookieConsentServiceProvider"
             ],
             "aliases": {
-                "CookieConsent": "BrianFaust\\CookieConsent\\Facades\\CookieConsent"
+                "CookieConsent": "Artisanry\\CookieConsent\\Facades\\CookieConsent"
             }
         }
     },

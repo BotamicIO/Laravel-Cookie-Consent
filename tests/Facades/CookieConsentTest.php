@@ -5,17 +5,17 @@ declare(strict_types=1);
 /*
  * This file is part of Laravel Cookie Consent.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Tests\CookieConsent\tests\Facades;
+namespace Artisanry\Tests\CookieConsent\tests\Facades;
 
-use BrianFaust\CookieConsent\Builder;
-use BrianFaust\CookieConsent\Facades\CookieConsent;
-use BrianFaust\Tests\CookieConsent\AbstractTestCase;
+use Artisanry\CookieConsent\Builder;
+use Artisanry\CookieConsent\Facades\CookieConsent;
+use Artisanry\Tests\CookieConsent\AbstractTestCase;
 use GrahamCampbell\TestBenchCore\FacadeTrait;
 
 class CookieConsentTest extends AbstractTestCase
